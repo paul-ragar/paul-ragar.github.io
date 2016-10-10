@@ -1,0 +1,21 @@
+<div ng-click="closePopUp()" class="contact-opaque"></div>
+<div class="contact-pop-up">
+  <p>Your message was sent!</p>
+  <button class="ok-message" ng-click="closePopUp()" type="button" name="button">OK</button>
+</div>
+
+  <section class="contact-container">
+    <div class="contact-grid">
+      <h1 class="contact-contact">Contact</h1>
+
+      <input class="input-name" type="text" placeholder="*Name">
+
+      <input class="input-email" type="text" placeholder="*Email">
+
+      <input class="input-phone" type="text" placeholder="Phone Number">
+
+      <textarea class="input-message" placeholder="*Message"rows="8" cols="40"></textarea>
+      <button class="contact-send" ng-click="sendMessage()" type="button" name="button">Send</button>
+      <p class="contact-warning">*Please be sure to fill out required information</p>
+    </div>
+  </section>

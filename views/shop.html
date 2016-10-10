@@ -1,0 +1,68 @@
+
+<div ng-click="backView()" class="opaque-square"></div>
+
+<div class="quick-product">
+
+  <div class="quick-view-image" ng-style="selectedProductImage">
+  </div>
+
+  <section class="shopping-container">
+    <div class="product-name" >
+      <p>{{selectedProduct.name}}</p>
+    </div>
+    <div class="product-price">
+      <p>{{selectedProduct.price}}</p>
+    </div>
+    <div class="quantity-div">
+      <p>Quantity</p>
+      <select class="quantity-selector" name="">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select>
+    </div>
+    <div class="size-div">
+      <p>Size</p>
+      <select class="size-selector" name="">
+        <option>Select a size</option>
+        <option>2 inches</option>
+        <option>3 inches</option>
+        <option>4 inches</option>
+        <option>5 inches</option>
+        <option>6 inches</option>
+        <option>7 inches</option>
+        <option>8 inches</option>
+        <option>9 inches</option>
+        <option>10 inches</option>
+        <option>11 inches</option>
+        <option>12 inches</option>
+        <option>13 inches</option>
+        <option>14 inches</option>
+      </select>
+    </div>
+    <div class="color-div">
+      <p>Color</p>
+      <select class="color-selector" name="">
+        <option>Select an color</option>
+        <option>Nano White</option>
+        <option>Fuzzy Peach</option>
+        <option>Desert Coral</option>
+        <option>Sea Foam Green</option>
+        <option>Crack Pepper</option>
+        <option>Paint Request + $3.00</option>
+      </select>
+    </div>
+    <div class="button-div">
+      <button class="button-addtoclass" id="addbtn" ng-click="addCart(selectedProduct.name); hideEmptyCart()" type="submit" name="button">Add to cart</button>
+    </div>
+  </section>
+
+
+</div>
+
+
+<section  class="square-container">
+  <div ng-repeat="product in products" class="squares"
+  ng-click="quickView(product.name)" ng-style="{'background-image': 'url({{product.image}})'}">
+  </div>
+</section>

@@ -1,0 +1,17 @@
+
+<section class="main-cart-container">
+  <section class="empty-cart-container">
+    <p class="empty-cart">
+      Your cart is empty. Return to&nbsp
+    </p>
+    <a class="shop-route" ui-sref="shop"> Shop</a>
+  </section>
+  <section ng-repeat="newCartItem in newCartItems" class="cart-container">
+    <div class="cart-images" ng-style="{'background-image': 'url({{newCartItem.image}})'}">
+    </div>
+    <p class="cart-name-p">{{newCartItem.name}}</p>
+    <button class="removeCartItem" ng-click="removeItem(newCartItem.name)" type="button" name="button">Remove item</button>
+
+    <p class="cart-price-p">{{newCartItem.price}}</p>
+  </section>
+</section>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="name" content="content">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <title></title>
+</head>
+
+<body ng-controller="mainCtrl">
+  <header class="main-header">
+    <div class="header-fader">
+      <div class="desert-twig-container">
+        <p class="desert-twig-banner">DESERT TWIG</p>
+      </div>
+    </div>
+  </header>
+  <nav class="nav-bar">
+    <a class="nav-buts"ui-sref="shop"> SHOP </a> &nbsp &nbsp &nbsp
+    <a class="nav-buts"ui-sref="contact"> CONTACT </a>&nbsp &nbsp &nbsp
+    <a class="nav-buts"ui-sref="about"> ABOUT </a> &nbsp &nbsp &nbsp
+    <a class="nav-buts"ui-sref="cart"> CART </a>
+  </nav>
+
+    <ui-view></ui-view>
+<div class="surround-footer">
+
+
+  <!-- <nav id="social-bar"> -->
+    <a href="https://www.facebook.com/deserttwig/?fref=ts">
+      <img id="face" src="http://www.bodybyvi-challenge.com/wp-content/uploads/2015/04/social-media-icons-facebook-grey.jpg" href="#">
+    </a>&nbsp &nbsp
+    <a href="https://www.instagram.com/deserttwig/">
+      <img id="insta" src="http://www.successacademies.org/site/themes/success-academy/assets/img/icon_instagram.png" href="#">
+    </a>&nbsp &nbsp
+    <a href="https://www.etsy.com/shop/DesertTwigShop">
+      <img id="etsy" src="http://www.ninalu.org/images/etsy_rund_grey.png" href="#">
+    </a>
+  </nav>
+<!-- </div> -->
+
+
+
+  <!-- All scripts are sited below -->
+
+  <script   src="http://code.jquery.com/jquery-3.1.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+  <script src="./public/bundle.js"></script>
+
+
+</body>
+</html>
